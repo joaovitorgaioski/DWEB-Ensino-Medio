@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de tabelas em HTML</title>
+</head>
+<body>
+    <h1 id="topo"><font face="arial">Como criar tabelas em HTML?</font></h1>
+    <p>
+        Este é um tutorial com 5 exemplos de como criar tabelas na linguagem de marcação de texto HTML.
+    </p>
+
+    <h2><font face="arial">Quais tags utilizamos?</font></h2>
+    <dl>
+        <dt>
+            Para definir uma tabela:
+            <dd>Usamos a tag "table".</dd>
+            <dd>Você pode adicionar atributos para a tabela e personalizar ela.</dd>
+            <img src="img/table.png" alt="table" width="5%">
+        </dt>
+        <br> <br>
+        <dt>
+            Para definir a parte que será o cabeçalho da tabela:
+            <dd>Usamos a tag "thead".</dd>
+            <img src="img/thead.png" alt="thead" width="6%">
+        </dt>
+        <br> <br>
+        <dt>
+            Para definir uma linha:
+            <dd>Usamos a tag "tr".</dd>
+            <dd>Lembrando que você pode criar quantas linhas você quiser.</dd>
+            <img src="img/tr.png" alt="tr" width="6%">
+        </dt>
+        <br> <br>
+        <dt>
+            Para definir uma coluna DO CABEÇALHO da tabela:
+            <dd>Usamos a tag "th".</dd>
+            <img src="img/th.png" alt="th" width="8%">
+        </dt>
+        <br> <br>
+        <dt>
+            Para definirmos a parte que será o corpo da tabela:
+            <dd>Usamos a tag "tbody".</dd>
+            <img src="img/tbody.png" alt="tbody" width="9%">
+        </dt>
+        <br> <br>
+        <dt>
+            Para definir uma coluna NO CORPO da tabela:
+            <dd>Usamos a tag "td".</dd>
+            <dd>Você pode usar os atributos ' rowspan="" ' para juntar colunas e ' colspan="" ' para juntar linhas.</dd>
+            <img src="img/td.png" alt="td" width="9%">
+        </dt>
+    </dl>
+    <p>
+        Lembrando que uma coluna necessariamente precisa estar em uma linha, por isso sempre está<br>
+        acompanhada de uma linha "tr".
+        <br> <br>
+        Pode-se usar a tag "tfoot" para definir um rodapé para a tabela, mas essa opção esta em desuso.
+        <br> <br>
+        Colunas também podem ter atributos para sua estilização, como exemplo o atributo ' align="center" ' <br>
+        que centraliza o conteúdo da coluna ou o ' width="" ' que define sua largura.
+    </p>
+
+    <h3><font face="arial">Resumidamente:</font></h3>
+    <img src="img/resumo.png" alt="estrutura da tabela" width="15%">
+    <p>
+        Com esses conhecimentos e os demais a respeito de HTML podemos criar tabelas satisfatórias.
+    </p>
+
+    <h2><font face="arial">Exemplo 1 - Tabela de uma rede social. (fictício):</font></h2>
+    <table border="1px" width="50%">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Apelidos</th>
+                <th>Foto de perfil</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Vitor</td>
+                <td>42991467498</td>
+                <td><a href="mailto:jvgaioski@hotmail.com">jvgaioski@hotmail.com</a></td>
+                <td>
+                    <ul>
+                        <li><i>Gaioski</i></li>
+                        <li><i>Joãozinho</i></li>
+                        <li><i>Ticolé</i></li>
+                    </ul>
+                </td>
+                <td align="center"><img src="img/foto gaioski.jpg" alt="picture" width="40%"></td>
+            </tr>
+            <tr>
+                <td>Samuel</td>
+                <td>42938294823</td>
+                <td><a href="mailto:samuel.sobrenome@gmail.com">samuel.sobrenome@gmail.com</a></td>
+                <td>
+                    <ul>
+                        <li><i>Sammy</i></li>
+                        <li><i>Sam</i></li>
+                        <li><i>Samuca</i></li>
+                        <li><i>Samu</i></li>
+                    </ul>
+                </td>
+                <td align="center"><img src="img/foto samuel.jpg" alt="picture" width="40%"></td>
+            </tr>
+            <tr>
+                <td>Dean</td>
+                <td>41993872445</td>
+                <td><a href="mailto:dean.exemplo@gmail.com">dean.exemplo@gmail.com</a></td>
+                <td>
+                    <ul>
+                        <li><i>Didi</i></li>
+                        <li><i>Daniel</i></li>
+                        <li><i>Dani</i></li>
+                    </ul>
+                </td>
+                <td align="center"><img src="img/foto dean.jpg" alt="picture" width="40%"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            Referente às informações dos usuários da rede social.
+        </tfoot>
+    </table>
+
+    <h2><font face="arial">Exemplo 2 - Tabela de notas de alunos no colégio. (fictício):</font></h2>
+    <table border="1px" width="30%">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Nota</th>
+                <th>Histórico escolar</th>
+                <th>Média da turma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Calisto</td>
+                <td>2022011507</td>
+                <td><b>7.5</b></td>
+                <td><a href="histórico calisto.txt" download="histórico calisto.txt">Calisto</a></td>
+                <td rowspan="3" align="center"><b>8.57</b></td>
+            </tr>
+            <tr>
+                <td>Giuseppe</td>
+                <td>2022031206</td>
+                <td><b>9.4</b></td>
+                <td><a href="histórico giuseppe.txt" download="histórico giuseppe.txt">Giuseppe</a></td>
+            </tr>
+            <tr>
+                <td>Vênus</td>
+                <td>2022230707</td>
+                <td><b>8.8</b></td>
+                <td><a href="histórico vênus.txt" download="histórico vênus.txt">Vênus</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            Referente às notas da turma 3-A do Colégio Estadual Melos Melos no primeiro trimestre de 2024.
+        </tfoot>
+    </table>
+
+    <h2><font face="arial">Exemplo 3 - Preço das passagens de uma viagem de onibus. (fictício):</font></h2>
+    <table border="1px" width="40%">
+        <thead>
+            <tr>
+                <th>Empresa</th>
+                <th>Horário</th>
+                <th>Classe</th>
+                <th>Preço (inteira)</th>
+                <th>Site oficial</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Princesa dos Campos</td>
+                <td>10:<sup>30</sup></td>
+                <td>VIP</td>
+                <td>R$70</td>
+                <td><a href="https://www.princesadoscampos.com.br/">Princesa dos Campos</a></td>
+            </tr>
+            <tr>
+                <td>Transportismo</td>
+                <td>10:<sup>30</sup></td>
+                <td>Econômica</td>
+                <td>R$62.50</td>
+                <td><a href="https://www.pudim.com.br/">Transportismo</a></td>
+            </tr>
+            <tr>
+                <td>Transportismo</td>
+                <td>10:<sup>30</sup></td>
+                <td>VIP</td>
+                <td>R$75</td>
+                <td><a href="https://www.pudim.com.br/">Transportismo</a></td>
+            </tr>
+            <tr>
+                <td>J Araújo</td>
+                <td>11:<sup>00</sup></td>
+                <td>Econômica</td>
+                <td>R$57.50</td>
+                <td><a href="https://jaraujo.com.br/">J Araújo</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            Possiveis viagens considerando o destino Ponta Grossa -> Curitiba.
+        </tfoot>
+    </table>
+
+    <h2><font face="arial">Exemplo 4 - Tabela dos 5 videogames mais vendidos até hoje:</font></h2>
+    <table border="1px" width="65%">
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Videogame</th>
+                <th>Vendas</th>
+                <th>Plataforma</th>
+                <th>Ano de Lançamento</th>
+                <th>Desenvolvedora</th>
+                <th>Capa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">1</td>
+                <td><i>Minecraft</i></td>
+                <td>~300.000.000</td>
+                <td rowspan="3">Multi-plataforma</td>
+                <td align="center">2011</td>
+                <td>Mojang</td>
+                <td align="center"><img src="img/minecraft.png" alt="minecraft" width="30%"></td>
+            </tr>
+            <tr>
+                <td align="center">2</td>
+                <td><i>Grand Theft Auto V</i></td>
+                <td>~195.000.000</td>
+                <td align="center">2013</td>
+                <td>Rockstar North</td>
+                <td align="center"><img src="img/gta 5.png" alt="gta 5" width="30%"></td>
+            </tr>
+            <tr>
+                <td align="center">3</td>
+                <td><i>Tetris</i></td>
+                <td>~100.000.000</td>
+                <td align="center">1984</td>
+                <td>Elektronorgtechnica</td>
+                <td align="center"><img src="img/tetris.png" alt="tetris" width="30%"></td>
+            </tr>
+            <tr>
+                <td align="center">4</td>
+                <td><i>Wii Sports</i></td>
+                <td>~82.900.000</td>
+                <td>Wii</td>
+                <td align="center">2006</td>
+                <td>Nintendo EAD</td>
+                <td align="center"><img src="img/wii sports.png" alt="wii sports" width="30%"></td>
+            </tr>
+            <tr>
+                <td align="center">5</td>
+                <td><i>PlayerUnknown's Battlegrounds</i></td>
+                <td>~75.000.000</td>
+                <td>Multi-plataforma</td>
+                <td align="center">2017</td>
+                <td>PUBG Studios</td>
+                <td align="center"><img src="img/pubg.jpg" alt="pubg" width="30%"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            Fonte: <a href="https://pt.wikipedia.org/wiki/Lista_de_jogos_eletr%C3%B4nicos_mais_vendidos">Wikipedia</a>
+        </tfoot>
+    </table>
+
+    <h2><font face="arial">Exemplo 5 - Clima da semana. (fictício):</font></h2>
+    <table border="1px" width="20%">
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Mínima</th>
+                <th>Máxima</th>
+                <th>Tempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Domingo</b></td>
+                <td>16°</td>
+                <td>21°</td>
+                <td><img src="img/nublado.png" alt="clima" width="65%"></td>
+            </tr>
+            <tr>
+                <td><b>Segunda</b></td>
+                <td>13°</td>
+                <td>23°</td>
+                <td><img src="img/nublado com sol.png" alt="clima" width="65%"></td>
+            </tr>
+            <tr>
+                <td><b>Terça</b></td>
+                <td>19°</td>
+                <td>22°</td>
+                <td><img src="img/sol.png" alt="clima" width="65%"></td>
+            </tr>
+            <tr>
+                <td><b>Quarta</b></td>
+                <td>22°</td>
+                <td>26°</td>
+                <td><img src="img/sol.png" alt="clima" width="65%"></td>
+            </tr>
+            <tr>
+                <td><b>Quinta</b></td>
+                <td>12°</td>
+                <td>18°</td>
+                <td><img src="img/nublado.png" alt="clima" width="65%"></td>
+            </tr>
+            <tr>
+                <td><b>Sexta</b></td>
+                <td>6°</td>
+                <td>16°</td>
+                <td><img src="img/chuva.png" alt="clima" width="65%"></td>
+            </tr>
+            <tr>
+                <td><b>Sábado</b></td>
+                <td>11°</td>
+                <td>21°</td>
+                <td><img src="img/chuva.png" alt="clima" width="65%"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <a href="https://maps.app.goo.gl/4q2cGiMRV6go5mYg9">Rio Azul - PR</a>. Dados atualizados em 23/04/2024.
+        </tfoot>
+    </table>
+    <br>
+    <table border="1px" width="15%">
+        <thead>
+            <tr>
+                <th colspan="2">Resumo</th>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>França</td>
+                <td><img src="img/frança.png" alt="França" width="100%"></td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td><img src="img/brasil.png" alt="Brasil" width="100%"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="#topo">Voltar ao início da página.</a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 - JS</title>
+    <!--Script incorporado-->
+    <script rel="text/javascript">
+        alert("Mensagem Importante ! - Script incorporado ao head")
+        alert("Meu nome é XXXX e estou aprendendo caixas de diálogo em JavaScript")
+    </script>
+    <script rel="text/javascript" src="js/ex01.js"></script>
+</head>
+<body>
+    <h1>Caixas de diálogo</h1>
+    <p>
+        São 3 tipos de caixa de diálogos.
+        <ul>
+            <li>alert: Exibe uma mensagem "alert";</li>
+            <li>confirm: Exibe uma mensagem em que o usuário pode escolher entre ok ou cancelar;</li>
+            <li>prompt: O usuário pode entrar dados na caixa de diálogo.</li>
+        </ul>
+    </p>
+    <p>
+        JavaScript pode ser incorporado ao HTML pela tag script. Esse script pode ser interno ou externo ao HTML com um arquivo ".js".
+    </p>
+    <button type="button" onclick="confirm('Caixa de diálogo acionada por pelo evento de clique no mouse')">
+        <h2>INLINE</h2>
+    </button>
+</body>
+</html>

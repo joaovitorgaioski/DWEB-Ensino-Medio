@@ -1,0 +1,134 @@
+.it{                        /*Itália*/
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.itverde{
+    background-color: rgb(60, 221, 60);
+    width: 100px;
+    height: 200px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.itbranco{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+    top: -200px;
+}
+.itred{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 200px;
+    position: relative;
+    left: 200px;
+    top: -400px;
+}
+.pol{                    /*Polônia*/
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.polbranco{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 100px;
+}
+.polred{
+    background-color: rgb(236, 57, 57);
+    width: 300px;
+    height: 100px;
+}
+.ale{                    /*Alemanha*/
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.alepreto{
+    background-color: black;
+    width: 300px;
+    height: 66.66px;
+}
+.alered{
+    background-color: red;
+    width: 300px;
+    height: 66.66px;
+}
+.aleamarelo{
+    background-color: rgb(233, 233, 48);
+    width: 300px;
+    height: 66.66px;
+}
+.ing{                    /*Inglaterra*/
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 53, 53);
+}
+.ingbranco1{
+    background-color: white;
+    width: 130px;
+    height: 80px;
+}
+.ingbranco2{
+    background-color: white;
+    position: relative;
+    left: 170px;
+    bottom: 80px;
+    width: 130px;
+    height: 80px;
+}
+.ingbranco3{
+    background-color: white;
+    position: relative;
+    left: 0px;
+    bottom: 40px;
+    width: 130px;
+    height: 80px;
+}
+.ingbranco4{
+    background-color: white;
+    position: relative;
+    left: 170px;
+    bottom: 120px;
+    width: 130px;
+    height: 80px;
+}
+.sue{                    /*Suécia*/
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(224, 224, 5)
+}
+.sueazul1{
+    background-color: rgb(76, 78, 219);
+    width: 90px;
+    height: 80px;
+}
+.sueazul2{
+    background-color: rgb(76, 78, 219);
+    position: relative;
+    left: 130px;
+    bottom: 80px;
+    width: 170px;
+    height: 80px;
+}
+.sueazul3{
+    background-color: rgb(76, 78, 219);
+    position: relative;
+    left: 0px;
+    bottom: 40px;
+    width: 90px;
+    height: 80px;
+}
+.sueazul4{
+    background-color: rgb(76, 78, 219);
+    position: relative;
+    left: 130px;
+    bottom: 120px;
+    width: 170px;
+    height: 80px;
+}
