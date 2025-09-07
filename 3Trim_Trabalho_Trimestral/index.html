@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFinances</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h1>WebFinances</h1>
+    <div class="cadastro">
+        <h2>Cadastro</h2>
+        <form id="formcadastro">
+            <label for="nome">Nome/Descrição:</label>
+            <input type="text" id="nome" required>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" required>
+                <option value="Receita">Receita</option>
+                <option value="Despesa">Despesa</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" required>
+
+            <button type="submit">Cadastrar</button>
+            <input type="hidden" id="id-editar">
+        </form>
+    </div>
+
+    <div class="lista">
+        <h2>Lista de Transações</h2>
+        <ul id="output"></ul>
+        <div id="resumo">
+            <p>Total de Receitas: <span id="total-receitas">0</span></p>
+            <p>Total de Despesas: <span id="total-despesas">0</span></p>
+            <p>Saldo Final: <span id="saldo-final">0</span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

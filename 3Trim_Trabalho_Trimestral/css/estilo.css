@@ -1,0 +1,138 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F7E8D0; /* Bege claro */
+    color: #2F2A27; /* Cor de texto escura para contraste */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', serif;
+    color: #B03A2E; /* Vermelho retro */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+/* Formulário de cadastro */
+.cadastro {
+    background-color: #FFF3E3; /* Fundo bege claro para o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #B03A2E; /* Vermelho retrô para as labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #B03A2E; /* Vermelho retro nas bordas */
+    border-radius: 5px;
+    background-color: #F9E6D4; /* Cor bege suave no fundo dos inputs */
+    font-size: 1em;
+    color: #2F2A27; /* Cor de texto escura para contraste */
+}
+
+button {
+    background-color: #B03A2E; /* Vermelho retro para o botão */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9B2C23; /* Escurecendo o botão ao passar o mouse */
+}
+
+/* Lista de transações */
+.lista {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+#output {
+    list-style-type: none;
+    padding: 0;
+}
+
+#output li {
+    background-color: #FFF3E3; /* Fundo claro para as transações */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: 1px solid #B03A2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#output li button {
+    background-color: #B03A2E;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#output li button:hover {
+    background-color: #9B2C23;
+}
+
+/* Resumo financeiro */
+#resumo {
+    background-color: #F9E6D4; /* Fundo suave para o resumo */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #B03A2E;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resumo p {
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: #2F2A27;
+}
+
+#resumo span {
+    font-weight: bold;
+    color: #B03A2E; /* Vermelho retro no valor do resumo */
+}
