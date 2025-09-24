@@ -23,7 +23,7 @@ document.getElementById("formcadastro").addEventListener("submit",function(event
 })
 
 function exibir_alunos(){
-    //Carrega a lista de alunso do LocalStorage ou inicializa a lista como vazio
+    //Carrega a lista de alunos do LocalStorage ou inicializa a lista como vazio
    
     var lista_alunos=JSON.parse(localStorage.getItem('lista_alunos'))||[];
     //alert(lista_aluno[5].nome)
@@ -40,4 +40,5 @@ function exibir_alunos(){
         }
 
 }
+
 
