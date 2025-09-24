@@ -1,4 +1,4 @@
-/*Acessa o formulário através do getElementById e fica "escutando"/esperando através do addEventListener o evento(submint)  que ocorrerá no caso o click no botão cadastrar. 
+/*Acessa o formulário através do getElementById e fica "escutando"/esperando através do addEventListener o evento(submit)  que ocorrerá no caso o click no botão cadastrar. 
 Quando isso ocorre ele executa a função anonima function(event) desencadeando as ações desejadas* */
 document.getElementById("formcadastro").addEventListener("submit",function(event)
 {
@@ -38,4 +38,5 @@ function exibir_alunos(){
             li.textContent = 'Nome: '+lista_alunos[i].nome+', Idade: '+ lista_alunos[i].idade;
             output.appendChild(li)
         }
+
 }
